@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 기본 디자인을 제거 */
+
+.wrapper{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    color:#fff;
+    background: linear-gradient(6deg,#780206,#061161);
+    padding:1em;
+    /*색 그라디에이션 넣기 */
+    /* 색 구성 링크 https://uigradients.com/#ManofSteel */
+    /* linear-gradient(6deg,~~)처럼 앞에 각도를 넣어서 그라데이션 효과 조정*/
+    display: flex;
+    align-items: center;
+    /* align-items 는 위아래 정렬 */
+    justify-content: center;
+    /* justify-content: center;  좌우로 정렬*/
+
+}
+.input-container{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+
+.input-text{
+    width: 90%;
+    padding: 0.3em;
+    border: none;
+}
+.add-button{
+    width: 10%;
+    border: none;
+    background: #28324e;
+    color:white;
+    outline:none;
+}
+.add-button:hover{
+    cursor:pointer;
+    background: linear-gradient(blue,skyblue);
+}
+
+.list{
+    list-style: none;
+}
+.list li{
+    display: flex;
+    border: solid 1px #ccc;
+    padding: 1em;
+}
+
+.like{
+    flex: 1;
+}
+.item{
+    flex:8;
+}
+.manage{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.like i{
+    color:salmon;
+}
+
+.check{
+    color: green;
+}
+.clear{
+    color: salmon;
+}
+.done.item{
+    text-decoration: line-through;
+}
+.done.check{
+    visibility: hidden;
+    /* 체크표시 끝나면 보이지 않게될텐데 이 때 보이지 않는 것이지 삭제가 아님을 나타내게한다. */
+}
